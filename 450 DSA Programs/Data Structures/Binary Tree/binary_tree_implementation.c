@@ -24,21 +24,21 @@ void preorder(struct node* root){
     preorder(root->right);
 }
 
-void preorder(struct node* root){
+void postorder(struct node* root){
     if(root==NULL){
         return;
     }
-    printf("%d ",root->data);
     preorder(root->left);
+    printf("%d ",root->data);
     preorder(root->right);
 }
 
-void order(struct node* root){
+void inorder(struct node* root){
     if(root==NULL){
         return;
     }
-    printf("%d ",root->data);
     preorder(root->left);
+    printf("%d ",root->data);
     preorder(root->right);
 }
 
