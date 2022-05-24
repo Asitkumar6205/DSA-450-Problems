@@ -1,0 +1,5 @@
+x=int(10)
+y=int(10)
+print("x =",x)
+print("y =",y)
+print("Multiplication of x and y=",x*y)
